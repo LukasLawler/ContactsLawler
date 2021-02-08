@@ -1,0 +1,14 @@
+﻿@model Contact
+
+<h5>Delete a contact</h5>
+
+<div class="container">
+    <div class="row justify-content-center">
+        <form asp-action="Delete" method="post">
+            <input type="hidden" asp-for="ContactId" />
+            <h2>Are you sure you want to remove @Model.Name from your contacts? </h2>
+            <button type="submit" class="btn btn-primary">Delete</button>
+            <a asp-controller="Home" asp-action="Index">Cancel</a>
+        </form>
+    </div>
+</div>
