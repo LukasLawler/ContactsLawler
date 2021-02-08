@@ -26,7 +26,7 @@ namespace ContactsLawler
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllersWithViews();
-            services.AddDbContext<ContactContext>(options => options.UseSqlServer(Configuration.GetConnectionString("ContactContext")));
+            services.AddDbContext<ContactContext>(options => options.UseSqlServer(@"Server=tcp:cis174lawler.database.windows.net,1433;Initial Catalog=Contacts;Persist Security Info=False;User ID=cis174lawler;Password=contacts1!;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;"));
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

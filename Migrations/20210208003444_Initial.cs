@@ -25,7 +25,7 @@ namespace ContactsLawler.Migrations
             migrationBuilder.InsertData(
                 table: "Contacts",
                 columns: new[] { "ContactId", "Address", "Name", "Note", "Number" },
-                values: new object[] { 1, "438 Limp Ave, Los Angeles, CA 90001", "Fred Durst", null, 4832982995L });
+                values: new object[] { 1, "438 Limp Ave, Los Angeles, CA 90001", "Fred Durst", "Limp Bizkit", 4832982995L });
 
             migrationBuilder.InsertData(
                 table: "Contacts",
